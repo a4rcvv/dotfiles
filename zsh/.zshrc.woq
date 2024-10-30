@@ -1,0 +1,2 @@
+export SHELDON_CONFIG_FILE=$HOME/.sheldon/plugins.toml
+eval "$(sheldon source)"
