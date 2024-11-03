@@ -2,7 +2,7 @@
 
 # Skip if not on macOS
 if [ "$(uname)" != "Darwin" ]; then
-    exit 0
+    return
 fi
 
 export IP=$(ipconfig getifaddr en0)
