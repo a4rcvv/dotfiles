@@ -18,6 +18,7 @@ brew "terminal-notifier"
 brew "sheldon"
 brew "starship"
 brew "aws/tap/copilot-cli"
+brew "font-plemol-jp-nf"
 
 cask "amazon-q"
 cask "battery"
