@@ -80,6 +80,9 @@ fi
 # sheldon
 ln -sfn "$DOTFILES_DIR/sheldon" ~/.sheldon
 
+# starship
+ln -sfn "$DOTFILES_DIR/starship/starship.toml" ~/.starship.toml
+
 echo "Symbolic links created!"
 
 echo "Installing packages..."
