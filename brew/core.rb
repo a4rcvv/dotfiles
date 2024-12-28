@@ -46,6 +46,7 @@ cask "warp"
 cask "xquartz"
 cask "zoom"
 cask "font-plemol-jp-nf"
+cask "drawio"
 
 mas "Bitwarden", id: 1352778147
 mas "Hidden Bar", id: 1452453066
