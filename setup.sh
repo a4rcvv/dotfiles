@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 DOTFILES_DIR=~/dotfiles
 
@@ -38,11 +39,14 @@ function install_packages_mac() {
 }
 
 function install_packages_debian() {
+  # mkdir ~/.local/bin if not exists
+  mkdir -p ~/.local/bin
+
   # Install Starship if not already installed
   if ! command -v starship &> /dev/null
   then
       echo "Installing Starship..."
-      curl -sS https://starship.rs/install.sh | sh -s -- -y
+      curl -sS https://starship.rs/install.sh | sh -s -- -y --bin-dir ~/.local/bin
       echo "Starship installed!"
   else
       echo "Starship has already been installed."
