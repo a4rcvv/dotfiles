@@ -95,4 +95,14 @@ if [ "$PLATFORM" == "macOS" ]; then
 elif [ "$PLATFORM" == "debian" ]; then
   install_packages_debian
 fi
+
+# Create ssh key if not exists
+if [ ! -f ~/.ssh/id_ed25519 ]; then
+  echo "Creating ssh key..."
+  ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519
+  echo "SSH key has been created!"
+else
+  echo "SSH key has already been created."
+fi
+
 echo "Packages installed!"
