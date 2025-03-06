@@ -1,7 +1,11 @@
 version: "3"
 
 tasks:
-  run-ubuntu:
+  docker:build:
+    desc: "Build a container"
+    cmds:
+      - docker compose build
+  docker:run:
     desc: "Run Ubuntu container"
     cmds:
       - docker compose run --rm ubuntu
