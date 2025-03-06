@@ -1,0 +1,7 @@
+version: "3"
+
+tasks:
+  run-ubuntu:
+    desc: "Run Ubuntu container"
+    cmds:
+      - docker compose run --rm ubuntu
