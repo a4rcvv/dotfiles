@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt update
-RUN apt install -y zsh curl
+RUN apt install -y zsh curl openssh-client
 
 # make user
 RUN useradd -m -s /bin/zsh user
