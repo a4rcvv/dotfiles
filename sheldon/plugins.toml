@@ -30,6 +30,9 @@ apply = ["source"]
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
+[plugins.gradle-completion]
+github = "gradle/gradle-completion"
+
 [plugins.local-defers]
 local = "~/dotfiles/zsh"
 use = ["defer/*.zsh"]
